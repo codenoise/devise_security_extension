@@ -2,8 +2,8 @@ RailsApp::Application.configure do
   config.cache_classes = true
   config.eager_load = false
 
-  config.serve_static_files = true
-  config.static_cache_control = 'public, max-age=3600'
+  config.serve_static_assets = true
+  config.static_cache_control = "public, max-age=3600"
 
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
@@ -16,6 +16,4 @@ RailsApp::Application.configure do
 
   config.active_support.deprecation = :stderr
   I18n.enforce_available_locales = false
-
-  config.active_support.test_order = :sorted
 end
